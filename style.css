@@ -20,13 +20,13 @@ html, body {
 
 body, ul {
   margin: 0;
-  padding: 0;
+  padding: 0px 15px 0px 0px;
   background: linear-gradient(135deg, #F5E8FF 0%, #FFE8F8 100%);
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 250px repeat(6, 1fr);
+  grid-template-columns: 270px repeat(6, 1fr);
   grid-template-rows: auto auto 1fr 1fr 1fr 1fr auto;
   grid-template-areas: 
     "left header header header header header header"
@@ -37,10 +37,11 @@ body, ul {
     "left middle middle middle middle middle right"
     "footer footer footer footer footer footer footer";
   min-height: 100vh;
-  width: 100%;
+  width: calc(100% - 15px);
   min-width: 0;
   gap: 15px;
   padding: 15px;
+  margin-right: 15px;
 }
 
 .navbar {
